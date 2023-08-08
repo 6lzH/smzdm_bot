@@ -9,6 +9,12 @@ from sys import argv
 import config
 from utils.serverchan_push import push_to_wechat
 
+DEFAULT_HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3',
+    'Accept': 'application/json, text/javascript, */*; q=0.01',
+    'Referer': 'https://zhiyou.smzdm.com/',
+}
+
 class SMZDM_Bot(object):
     def __init__(self):
         self.session = requests.Session()
