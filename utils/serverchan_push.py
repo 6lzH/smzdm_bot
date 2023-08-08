@@ -19,5 +19,5 @@ def push_to_wechat(text,desp,secretKey):
 
 
 if __name__ == '__main__':
-    resp = push_to_wechat(text = 'test', desp='hi', secretKey= config.SERVERCHAN_SECRETKEY)
+    resp = push_to_wechat(text = 'test', desp='hi', secretKey= 'SCT219118TOnTU3ejOSNloAxh8jkn6B4VX')
     print(resp)
