@@ -35,7 +35,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Watch for file changes
-        uses: jakejarvis/watch-files-action@v1
+        uses: dev-drprasad/delete-previous-runs-action@v1
         with:
           files: '**/*.py'
           ignore: 'SMZDM_Bot.log'
